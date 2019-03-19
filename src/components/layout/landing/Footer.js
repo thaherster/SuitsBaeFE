@@ -68,7 +68,7 @@ class Footer extends Component {
                 </div> */}
                 <div className="footer__row">
                   <a
-                    href="https://twitter.com/suitsbae"
+                    href="https://twitter.com/BaeSuites"
                     target="_blank"
                     className="footer__link"
                   >
