@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import undraw_designer from "../../../images/undraw_designer.svg";
-import undraw_responsive from "../../../images/undraw_responsive.svg";
-import undraw_creation from "../../../images/undraw_creation.svg";
+import undraw_code_typing from "../../../images/undraw_code_typing.svg";
+import undraw_business from "../../../images/undraw_business.svg";
 
 class Steps extends Component {
   render() {
     return (
       <div className="steps landing__section">
         <div className="container">
-          <h2>Who can use Evie?</h2>
+          <h2>
+            Who can use <b>SuitsBae.</b>?
+          </h2>
           <p>
             Here's who we can think of, but surely creative people will surprise
             us.
@@ -20,30 +22,31 @@ class Steps extends Component {
               <div className="step__media">
                 <img src={undraw_designer} className="step__image" />
               </div>
+              <h4>Professionals</h4>
+              <p className="step__text">
+                A public profile for your online presense. Present yourself to
+                the world.
+              </p>
+            </div>
+            <div className="step">
+              <div className="step__media">
+                <img src={undraw_code_typing} className="step__image" />
+              </div>
               <h4>Programmers</h4>
               <p className="step__text">
-                A landing page for your open source projects. Present your
-                solution, easily create docs.
+                Save server storage space for avatars and resumes. Use{" "}
+                <b>SuitsBae.</b>
+                plugins or <b>SuitsBae.</b> APIs.
               </p>
             </div>
             <div className="step">
               <div className="step__media">
-                <img src={undraw_responsive} className="step__image" />
+                <img src={undraw_business} className="step__image" />
               </div>
-              <h4>Designers</h4>
+              <h4>Business Executives</h4>
               <p className="step__text">
-                A website for your own freebies. Let the world download and use
-                your artwork.
-              </p>
-            </div>
-            <div className="step">
-              <div className="step__media">
-                <img src={undraw_creation} className="step__image" />
-              </div>
-              <h4>Makers</h4>
-              <p className="step__text">
-                A great starting point for your web application. Focus on your
-                idea and execution.
+                An easy way to exchange information while meeting new people.
+                Focus on your networking.
               </p>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class CallToAction extends Component {
   render() {
@@ -6,9 +7,10 @@ class CallToAction extends Component {
       <div className="cta cta--reverse">
         <div className="container">
           <div className="cta__inner">
-            <h2 className="cta__title">Get started now</h2>
+            <h2 className="cta__title">Subscribe</h2>
             <p className="cta__sub cta__sub--center">
-              Grab the production version and begin your project instantly.
+              Grab the front seat for the production version and be the first
+              one to use.
             </p>
             <a href="#" className="button button__accent">
               Download Evie

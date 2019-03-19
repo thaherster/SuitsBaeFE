@@ -1,27 +1,60 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { logoutUser } from "../../../actions/authActions";
 
-export default class NavBar extends Component {
+class NavBar extends Component {
+  constructor() {
+    super();
+
+    this.onLogoutClick = this.onLogoutClick.bind(this);
+  }
+  onLogoutClick(e) {
+    e.preventDefault();
+    console.log("LOGOIT");
+    this.props.logoutUser();
+  }
+
   render() {
+    const { isAuthenticated, user } = this.props.auth;
+
+    const authLinks = (
+      <ul>
+        <li>
+          <Link to="/dashboard">Dashboard</Link>
+        </li>
+        <li>
+          <a href="#" onClick={this.onLogoutClick}>
+            Logout
+          </a>
+        </li>
+      </ul>
+    );
+
+    const guestLinks = (
+      <ul>
+        <li>
+          <Link to="/login">Log In</Link>
+        </li>
+        <li>
+          <Link to="/register">Sign Up</Link>
+        </li>
+      </ul>
+    );
     return (
       <div className="navbar">
         <nav className="nav__mobile" />
         <div className="container">
           <div className="navbar__inner">
-            <a href="index.html" className="navbar__logo">
-              Logo
-            </a>
-            <nav className="navbar__menu">
-              <ul>
-                <li>
-                  <a href="index.html">Option</a>
-                </li>
-                <li>
-                  <a href="index.html">Option 2</a>
-                </li>
-              </ul>
-            </nav>
+            <Link to="/" className="navbar__logo ">
+              <b>SuitsBae.</b>
+            </Link>
+            {/* <nav className="navbar__menu">
+              {isAuthenticated ? authLinks : guestLinks}
+            </nav> */}
             <div className="navbar__menu-mob">
-              <a href="index.html" id="toggle">
+              <a href="#" id="toggle">
                 <svg
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
@@ -41,3 +74,18 @@ export default class NavBar extends Component {
     );
   }
 }
+
+NavBar.propTypes = {
+  logoutUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
+};
+
+const mapStatetoProps = state => ({
+  auth: state.auth,
+  errors: state.errors
+});
+export default connect(
+  mapStatetoProps,
+  { logoutUser }
+)(NavBar);

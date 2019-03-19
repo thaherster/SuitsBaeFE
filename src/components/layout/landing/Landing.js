@@ -5,11 +5,13 @@ import Steps from "./Steps";
 import ExpandedSections from "./ExpandedSections";
 import CallToAction from "./CallToAction";
 import Footer from "./Footer";
+import NavBar from "../dashboard/NavBar";
 
 class Landing extends Component {
   render() {
     return (
       <div>
+        <NavBar />
         <Hero />
         <HeroSub />
         <Steps />

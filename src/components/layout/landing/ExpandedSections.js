@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import together from "../../../images/together.svg";
-
-import undraw_browser from "../../../images/undraw_browser.svg";
-import undraw_frameworks from "../../../images/undraw_frameworks.svg";
+import undraw_avatar from "../../../images/undraw_avatar.svg";
+import undraw_resume from "../../../images/undraw_resume.svg";
+import undraw_meeting from "../../../images/undraw_meeting.svg";
 
 class ExpandedSections extends Component {
   render() {
@@ -12,18 +11,15 @@ class ExpandedSections extends Component {
           <div className="container">
             <div className="expanded__inner">
               <div className="expanded__media">
-                <img src={undraw_browser} className="expanded__image" />
+                <img src={undraw_avatar} className="expanded__image" />
               </div>
               <div className="expanded__content">
-                <h2 className="expanded__title">
-                  Natural styling with almost nothing to learn
-                </h2>
+                <h2 className="expanded__title">Global Avatar</h2>
                 <p className="expanded__text">
-                  Evie brings you the pages you'll need and the structure to
-                  create your own, without a learning curve. It is minimal and
-                  mostly styles plain elements. There are only a few classes
-                  you'll need to know but nothing to disrupt your preferred
-                  coding style.
+                  You setup your crazy yet awesome avatar just once, and then
+                  when you participate in any <b>SuitsBae.</b> enabled site,
+                  your avatar image will automatically follow you there. Yes,
+                  exactly like a Gravatar.
                 </p>
               </div>
             </div>
@@ -33,16 +29,14 @@ class ExpandedSections extends Component {
           <div className="container">
             <div className="expanded__inner">
               <div className="expanded__media">
-                <img src={undraw_frameworks} className="expanded__image" />
+                <img src={undraw_resume} className="expanded__image" />
               </div>
               <div className="expanded__content">
-                <h2 className="expanded__title">
-                  Framework agnostic. Your front-end setup, your choice.
-                </h2>
+                <h2 className="expanded__title">Globally Shared Resume</h2>
                 <p className="expanded__text">
-                  Evie has zero dependencies and uses vanilla JavaScript for a
-                  few functions with minimal footprint. You can use React, Vue,
-                  Angular, jQuery or whatever you prefer.
+                  You upload your updated resume and apply to any
+                  <b>SuitsBae.</b> enabled career page, your resume will
+                  automatically follow you to the HR team.
                 </p>
               </div>
             </div>
@@ -52,17 +46,15 @@ class ExpandedSections extends Component {
           <div className="container">
             <div className="expanded__inner">
               <div className="expanded__media">
-                <img src={together} className="expanded__image" />
+                <img src={undraw_meeting} className="expanded__image" />
               </div>
               <div className="expanded__content">
                 <h2 className="expanded__title">
-                  Ready for production or rapid prototyping
+                  Easily Exchange Contacts While Networking
                 </h2>
                 <p className="expanded__text">
-                  Landing, authentication and a few other pages to select from,
-                  despite the small size. Tested on production at unDraw with
-                  amazing speeds and unopinionated on how to structure your
-                  project. We really hope you'll find it awesome and useful!
+                  Exchange your contacts instantly without a hassle with the
+                  person you just met.
                 </p>
               </div>
             </div>

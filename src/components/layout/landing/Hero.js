@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from "../../../images/tuxedo.svg";
 
 class Hero extends Component {
   render() {
@@ -10,20 +11,21 @@ class Hero extends Component {
           <div className="container">
             <div className="hero__content">
               <div className="hero__content__inner" id="navConverter">
-                <h1 className="hero__title">
-                  A production-ready theme for your projects
-                </h1>
+                <h1 className="hero__title">Recognize yourself Online</h1>
                 <p className="hero__text">
-                  Evie is an MIT licensed template bundled with a minimal style
-                  guide to build websites faster. It is extemely lightweight,
-                  customizable and works perfectly on modern browsers.
+                  <b>SuitsBae.</b> is a free service for business executives,
+                  developers, site owners and users. Suits Bae. help identify
+                  you to other websites, or individuals. And yeah its all free.
                 </p>
-                <a href="index.html" className="button button__accent">
-                  Download Evie
-                </a>
-                <a href="index.html" className="button hero__button">
-                  Learn more
-                </a>
+                {/* <a href="index.html" className="button button__accent">
+                  Get Started
+                </a> */}
+
+                <span id="scrollToNext" class="scroll">
+                  <a href="#" className="button hero__button">
+                    Learn more
+                  </a>
+                </span>
               </div>
             </div>
           </div>

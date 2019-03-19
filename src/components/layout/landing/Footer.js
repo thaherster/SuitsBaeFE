@@ -1,18 +1,28 @@
 import React, { Component } from "react";
-
+import logo from "../../../images/tuxedo.svg";
 class Footer extends Component {
   render() {
     return (
       <div className="footer footer--dark">
         <div className="container">
           <div className="footer__inner">
-            <a href="index.html" className="footer__textLogo">
-              Evie theme
+            <a href="/" className="footer__textLogo">
+              <img className="center" src={logo} height="75" width="75" />
             </a>
             <div className="footer__data">
               <div className="footer__data__item">
                 <div className="footer__row">
                   Created by{" "}
+                  <a
+                    href="https://twitter.com/thaherster"
+                    target="_blank"
+                    className="footer__link"
+                  >
+                    Thaher Majeed
+                  </a>
+                </div>
+                <div className="footer__row">
+                  Theme Created by{" "}
                   <a
                     href="https://twitter.com/ninalimpi"
                     target="_blank"
@@ -22,7 +32,7 @@ class Footer extends Component {
                   </a>
                 </div>
                 <div className="footer__row">
-                  Code/design by{" "}
+                  Theme Code/design by{" "}
                   <a
                     href="https://twitter.com/anges244"
                     target="_blank"
@@ -33,47 +43,49 @@ class Footer extends Component {
                 </div>
               </div>
               <div className="footer__data__item">
+                <div className="footer__row">Support Us</div>
                 <div className="footer__row">
-                  Created for{" "}
                   <a
-                    href="https://undraw.co"
+                    href="https://www.buymeacoffee.com/suitsbae"
                     target="_blank"
-                    className="footer__link"
                   >
-                    unDraw
+                    <img
+                      src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png"
+                      alt="Buy Me A Coffee"
+                    />
                   </a>
                 </div>
               </div>
               <div className="footer__data__item">
-                <div className="footer__row">
+                {/* <div className="footer__row">
                   <a
                     href="https://github.com/anges244/evie"
                     target="_blank"
                     className="footer__link"
                   >
-                    GitHub
+                    KickStarter
                   </a>
-                </div>
+                </div> */}
                 <div className="footer__row">
                   <a
-                    href="https://twitter.com/undraw_co"
+                    href="https://twitter.com/suitsbae"
                     target="_blank"
                     className="footer__link"
                   >
                     Twitter
                   </a>
                 </div>
-                <div className="footer__row">
+                {/* <div className="footer__row">
                   <a
-                    href="https://www.facebook.com/undraw.co/"
+                    href="https://www.facebook.com/suitsbae"
                     target="_blank"
                     className="footer__link"
                   >
                     Facebook
                   </a>
-                </div>
+                </div> */}
                 <div className="footer__row">
-                  <a href="./additional.html" className="footer__link">
+                  <a href="#" className="footer__link">
                     MIT license
                   </a>
                 </div>

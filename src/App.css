@@ -485,12 +485,12 @@ a {
 }
 
 .link {
-  color: #6c63ff;
+  color: #363946;
   text-decoration: underline;
 }
 @media (min-width: 992px) {
   .link:hover {
-    color: #463aff;
+    color: #696773;
   }
 }
 
@@ -499,8 +499,8 @@ button,
   display: inline-block;
   padding: 6pt 20pt;
   line-height: 1.7;
-  border: 1px solid #6c63ff;
-  color: #6c63ff;
+  border: 1px solid #363946;
+  color: #363946;
   font-weight: 400;
   transition: 0.7s;
   white-space: nowrap;
@@ -521,20 +521,20 @@ button:focus,
 @media (min-width: 992px) {
   button:hover,
   .button:hover {
-    border-color: #463aff;
-    color: #463aff;
+    border-color: #696773;
+    color: #696773;
   }
 }
 
 .button__primary {
-  background-color: #6c63ff;
-  border-color: #6c63ff;
+  background-color: #363946;
+  border-color: #363946;
   color: #fff;
 }
 @media (min-width: 992px) {
   .button__primary:hover {
-    background-color: #463aff;
-    border-color: #463aff;
+    background-color: #696773;
+    border-color: #696773;
     color: #fff;
   }
 }
@@ -771,8 +771,8 @@ select::-ms-expand {
 
 [type="radio"]:checked + label:after {
   border-radius: 50%;
-  border: 1px solid #6c63ff;
-  background-color: #6c63ff;
+  border: 1px solid #363946;
+  background-color: #363946;
   z-index: 0;
   transform: scale(1.02);
 }
@@ -873,7 +873,7 @@ select::-ms-expand {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: #6c63ff;
+  background-color: #363946;
   transition: 0.7s;
 }
 .navbar--nofixed {
@@ -922,6 +922,9 @@ select::-ms-expand {
 .navbar__menu a {
   color: #fff;
 }
+.error {
+  color: rgb(243, 91, 91);
+}
 @media (min-width: 992px) {
   .navbar__menu a {
     opacity: 0.75;
@@ -929,6 +932,7 @@ select::-ms-expand {
   .navbar__menu a:hover {
     opacity: 1;
   }
+
   .navbar__menu a:after {
     display: block;
     content: "";
@@ -1029,7 +1033,7 @@ select::-ms-expand {
 .hero {
   position: relative;
   width: 100%;
-  background-image: url("./images/evie_default_bg.jpeg");
+  background-image: url("./images/default_bg.jpg");
   box-shadow: 0 4px 11px rgba(124, 146, 169, 0.5);
   background-size: cover;
   background-position: center center;
@@ -1047,15 +1051,15 @@ select::-ms-expand {
   width: 100%;
   opacity: 0.96;
   z-index: 1;
-  background-color: #6c63ff;
+  background-color: #363946;
 }
 
 .hero__overlay--gradient {
-  background: linear-gradient(to right, #6c63ff, #4641ff);
+  background: linear-gradient(to right, #363946, #696773);
 }
 
 .hero__overlay--gradientVertical {
-  background: linear-gradient(to bottom, #6c63ff, #4641ff);
+  background: linear-gradient(to bottom, #363946, #696773);
 }
 
 .hero__mask {
@@ -1130,7 +1134,7 @@ select::-ms-expand {
 }
 @media (min-width: 992px) {
   .hero__sub__down:hover {
-    color: #6c63ff;
+    color: #363946;
   }
 }
 
@@ -1280,22 +1284,22 @@ select::-ms-expand {
 }
 
 .cta {
-  background: linear-gradient(to right, #6c63ff, #4641ff);
+  background: linear-gradient(to right, #363946, #696773);
   color: #fff;
   padding: 48pt 0;
   text-align: center;
 }
 
 .cta--reverse {
-  background: linear-gradient(to left, #6c63ff, #4641ff);
+  background: linear-gradient(to left, #363946, #696773);
 }
 
 .cta--plain {
-  background: #6c63ff;
+  background: #363946;
 }
 
 .cta--secondary {
-  background: #4641ff;
+  background: #696773;
 }
 
 .cta__title {
@@ -1333,7 +1337,7 @@ select::-ms-expand {
   padding-right: 16pt;
   display: block;
   cursor: pointer;
-  color: #6c63ff;
+  color: #363946;
   font-size: 1.225rem;
   min-width: 33%;
   margin-bottom: 1.5rem;
@@ -1374,8 +1378,8 @@ select::-ms-expand {
 }
 
 .footer__link {
-  color: #6c63ff;
-  border-bottom: 1px dotted #6c63ff;
+  color: #363946;
+  border-bottom: 1px dotted #363946;
   padding-bottom: 1pt;
   transition: 0.7s;
 }
@@ -1667,12 +1671,12 @@ select::-ms-expand {
   }
   .vMenu a:hover {
     opacity: 1;
-    color: #6c63ff;
+    color: #363946;
   }
   .vMenu a:after {
     display: block;
     content: "";
-    border-bottom: 1px solid #6c63ff;
+    border-bottom: 1px solid #363946;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
   }
@@ -1696,7 +1700,7 @@ select::-ms-expand {
 }
 
 .vMenu--active {
-  color: #6c63ff;
+  color: #363946;
 }
 .vMenu--active:before {
   content: "\2014";
@@ -1705,12 +1709,12 @@ select::-ms-expand {
 @media (min-width: 992px) {
   .vMenu--active {
     opacity: 1;
-    color: #6c63ff;
+    color: #363946;
   }
   .vMenu--active:after {
     display: block;
     content: "";
-    border-bottom: 1px solid #6c63ff;
+    border-bottom: 1px solid #363946;
     transform: none;
     transition: none;
   }
